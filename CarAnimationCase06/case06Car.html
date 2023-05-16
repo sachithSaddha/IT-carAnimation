@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation case06</title>
+
+    <style>
+        .sky{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 97vh;
+        }
+
+        .road{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            background-repeat: no-repeat   ;
+            animation-name: roadani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        .city1{
+            position: absolute;
+            right: 0;
+            top: 21.5vh;
+
+            background-repeat: no-repeat   ;
+            animation-name: cityani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+
+        }
+
+        .city2{
+            position: absolute;
+            left: 100vw;
+            top: 21.5vh;
+
+            background-repeat: no-repeat   ;
+            animation-name: cityani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        .car{
+            position: absolute;
+            width: 35vw;
+            left: 35vw;
+            bottom: 25vh;
+        }
+
+        .wheel1{
+            position: absolute;
+            width: 7vw;
+            left: 38vw;
+            bottom: 26vh;
+
+            animation-name: wheelani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .wheel2{
+            position: absolute;
+            width: 7vw;
+            left: 59vw;
+            bottom: 26vh;
+
+            animation-name: wheelani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes roadani {
+            from{
+
+            }
+            to{
+                transform:translateX(-50%) ;
+            }
+        }
+
+        @keyframes cityani {
+            from{
+
+            }
+            to{
+                transform:translateX(-100%) ;
+            }
+        }
+
+        @keyframes wheelani {
+            from{
+
+            }
+            to{
+                transform: rotate(360deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <img class="sky" src="assets/images/sky.jpg" alt="sky">
+    <img class="road" src="assets/images/road.jpg" alt="road">
+    <div>
+        <img class="city1" src="assets/images/city.png" alt="city">
+        <img class="city2" src="assets/images/city.png" alt="city">
+    </div>
+</section>
+<section>
+    <img class="car" src="assets/images/car.png" alt="car">
+    <img class="wheel1" src="assets/images/wheel.png" alt="wheel">
+    <img class="wheel2" src="assets/images/wheel.png" alt="wheel">
+</section>
+
+</body>
+</html>
